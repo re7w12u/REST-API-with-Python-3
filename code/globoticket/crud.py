@@ -1,10 +1,10 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from globoticket.models import DBEvent
+from .models import DBEvent
 
 
-def get_dbevent(id: int, db: Session) -> DBEvent | None:
+def get_dbevent(id: int, db: Session) -> DBEvent:
     return db.get(DBEvent, id)
 
 
