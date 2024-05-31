@@ -20,7 +20,6 @@ RUN pip install -r requirements.txt
 COPY poetry.lock pyproject.toml ./
 RUN poetry config virtualenvs.create false
 
-
 RUN poetry install --no-interaction --no-ansi
 
 COPY ./code /app
