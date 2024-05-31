@@ -36,3 +36,10 @@ You can now view the project at http://localhost:8000
 ## 5. Test the project
 
 For this you run `poetry run pytest`.
+
+# For Docker support 
+git clone
+cd <project>
+docker build -t python-fastapi .
+docker run -p 8000:8000 -d -v code:/app python-fastapi
+
